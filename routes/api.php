@@ -23,7 +23,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::resource('posts',PostController::class);
-
+// Order list
 Route::get('orders', [OrderController::class, 'index']);
 Route::get('orders/{id}', [OrderController::class, 'show']);
 Route::post('orders', [OrderController::class, 'store']);
